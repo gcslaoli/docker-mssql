@@ -4,11 +4,12 @@ services:
     image: mcr.microsoft.com/mssql/server:2017-CU8-ubuntu
     restart: always
     volumes: 
-      - ./data/:/var/opt/mssql/data/
-      # - ./initdb/:/initdb/
+      - ./data/mssql:/var/opt/mssql/data/
+      - ./data/initdb/:/initdb/
 
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: "12345678"
+      SA_PASSWORD: "fjTGgpaFlp3LLi3tsB"
+      MSSQL_PID: "Developer"
     ports:
       - 1433:1433
