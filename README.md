@@ -23,6 +23,20 @@ You can use environment variables to configure SQL Server on Linux Containers.
 
 For a complete list of environment variables that can be used, refer to the documentation [here](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-2017).
 
+# 命令
+启动数据库
+```sh
+docker-compose -f "docker-compose.yml" up -d --build 
+```
+查看数据库日志
+```sh
+docker-compose -f 'docker-compose.yml' -p 'docker-mssql' logs -f --tail 1000
+```
+关闭数据库
+```sh
+docker-compose -f "docker-compose.yml" down
+```
+
 # 导入已有的数据库文件
 
 ```sql

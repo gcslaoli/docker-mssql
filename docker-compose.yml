@@ -12,4 +12,4 @@ services:
       SA_PASSWORD: "fjTGgpaFlp3LLi3tsB"
       MSSQL_PID: "Developer"
     ports:
-      - 1433:1433
+      - 1433:1433 # 宿主机端口:容器端口
