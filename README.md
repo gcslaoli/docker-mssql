@@ -1,4 +1,8 @@
 # 使用docker部署MSSQL(Microsoft SqlServer)
+github地址： https://github.com/GCSLaoLi/docker-mssql
+
+gitee镜像： https://gitee.com/gcslaoli/docker-mssql
+
 微软官方提供了MSSQL的docker镜像 https://hub.docker.com/_/microsoft-mssql-server
 # 环境变量
 ## Environment Variables
